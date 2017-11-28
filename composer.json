@@ -2,7 +2,7 @@
     "name": "Aac/saml2-bearer-server",
     "description": "This is a demo project that implements an Oauth2 server that handles saml2-bearer authorization grants.",
     "license":"MIT",
-    "homepage": "https://github.com/aacotroneo/saml2-bearer-server",
+    "homepage": "https://github.com/krisolafson/saml2-bearer-server",
     "autoload": {
         "psr-4": {"Aac\\": "src/"}
     },
@@ -12,13 +12,13 @@
     "repositories": [
         {
             "type": "vcs",
-            "url" : "https://github.com/aacotroneo/oauth2-server-php"
+            "url" : "https://github.com/krisolafson/oauth2-server-php"
         }
     ],
     "require": {
         "php": ">=5.3.9",
-        "bshaffer/oauth2-server-php":"dev-develop",
-        "onelogin/php-saml": "v2.3",
+        "kolafson/oauth2-server-php",
+        "onelogin/php-saml": "~2.12",
         "slim/slim": "2.*",
         "slim/views": "*",
         "twig/twig" :"~1.0",
